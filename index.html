@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Lokasi Service Sepeda Motor</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB_LlDpB_KIo0XKdGlHKoNnZ4EAgZoR4kI&callback=initMap"></script>
+    <script type="text/javascript">
+        (function () {
+            window.onload = function () {
+                var latLng = new google.maps.LatLng(-7.5658,110.8231956);
+                var options = {
+                    zoom: 14,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var map = new google.maps.Map(document.getElementById('tengah'), options);
+
+                var DHCSMR = new google.maps.LatLng(-7.5684432, 110.7876797);
+                var H1TM = new google.maps.LatLng(-7.5767787, 110.8090211);
+                var HAB1 = new google.maps.LatLng(-7.5521763, 110.8298051);
+                var YSMS = new google.maps.LatLng(-7.5652051, 110.8189633);
+                var YKM = new google.maps.LatLng(-7.5793828, 110.8145731);
+                var YNKMSDS = new google.maps.LatLng(-7.570976, 110.8237858);
+                var SMDK = new google.maps.LatLng(-7.5655308, 110.8308426);
+                var DMK = new google.maps.LatLng(-7.5505488, 110.8219496);
+                var SBRSII = new google.maps.LatLng(-7.5754932, 110.8201069);
+                var DHCSMR = new google.maps.LatLng(-7.5814801, 110.8204795);
+
+                var marker = new google.maps.Marker({
+                    position: H1TM,
+                    map: map,
+                    title: 'Dealer Honda Cahaya Sakti Motor Rajiman',
+                    animation: google.maps.Animation.BOUNCE
+                });
+                var marker = new google.maps.Marker({
+                    position: DHCSMR,
+                    map: map,
+                    title: 'Honda 1272 Taruna Motorsport',
+                    animation: google.maps.Animation.BOUNCE
+                });
+                var marker = new google.maps.Marker({
+                    position: HAB1,
+                    map: map,
+                    title: 'Honda AHASS BPK 13419',
+                    animation: google.maps.Animation.BOUNCE
+                });
+                var marker = new google.maps.Marker({
+                    position: YSMS,
+                    map: map,
+                    title: 'Yamaha Sprint Motor Solo',
+                    animation: google.maps.Animation.BOUNCE
+                });
+                var marker = new google.maps.Marker({
+                    position: YKM,
+                    map: map,
+                    title: 'Yamaha Kondang Motor',
+                    animation: google.maps.Animation.BOUNCE
+                });
+                var marker = new google.maps.Marker({
+                    position: YNKMSDS,
+                    map: map,
+                    title: 'Yamaha Naga Kencana Motor Solo Dan Service',
+                    animation: google.maps.Animation.BOUNCE
+                });
+                var marker = new google.maps.Marker({
+                    position: SMDK,
+                    map: map,
+                    title: 'Solindo Motor - Dealer Kawasaki',
+                    animation: google.maps.Animation.BOUNCE
+                });
+                var marker = new google.maps.Marker({
+                    position: DMK,
+                    map: map,
+                    title: 'Dealer Motor Kawasaki',
+                    animation: google.maps.Animation.BOUNCE
+                });
+                var marker = new google.maps.Marker({
+                    position: SBRSII,
+                    map: map,
+                    title: 'Sumber Baru Rejeki Sraten II',
+                    animation: google.maps.Animation.BOUNCE
+                });
+                var marker = new google.maps.Marker({
+                    position: DHCSMS,
+                    map: map,
+                    title: 'Dealer Honda Cahaya Sakti Motor Solo',
+                    animation: google.maps.Animation.BOUNCE
+                });
+            }
+        })();
+
+        function getHTMLText(a) {
+            if (a == 1) {
+                var latLng = new google.maps.LatLng(-7.5684432, 110.7876797);
+                var options = {
+                    zoom: 15,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+
+                var map = new google.maps.Map(document.getElementById('tengah'), options);
+
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'Dealer Honda Cahaya Sakti Motor Rajiman',
+                    animation: google.maps.Animation.BOUNCE
+                });
+            }
+            if (a == 2) {
+                var latLng = new google.maps.LatLng(-7.5767787, 110.8090211);
+                var options = {
+                    zoom: 15,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+
+                var map = new google.maps.Map(document.getElementById('tengah'), options);
+
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'Honda 1272 Taruna Motorsport',
+                    animation: google.maps.Animation.BOUNCE
+                });
+
+            }
+            if (a == 3) {
+                var latLng = new google.maps.LatLng(-7.5521763, 110.8298051);
+                var options = {
+                    zoom: 15,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+
+                var map = new google.maps.Map(document.getElementById('tengah'), options);
+
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'Honda AHASS BPK 13419',
+                    animation: google.maps.Animation.BOUNCE
+                });
+            }
+            if (a == 4) {
+                var latLng = new google.maps.LatLng(-7.5652051, 110.8189633);
+                var options = {
+                    zoom: 15,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+
+                var map = new google.maps.Map(document.getElementById('tengah'), options);
+
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'Yamaha Sprint Motor Solo',
+                    animation: google.maps.Animation.BOUNCE
+                });
+            }
+            if (a == 5) {
+                var latLng = new google.maps.LatLng(-7.5793828, 110.8145731);
+                var options = {
+                    zoom: 15,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+
+                var map = new google.maps.Map(document.getElementById('tengah'), options);
+
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'Yamaha Kondang Motor',
+                    animation: google.maps.Animation.BOUNCE
+                });
+            }
+            if (a == 6) {
+                var latLng = new google.maps.LatLng(-7.570976, 110.8237858);
+                var options = {
+                    zoom: 15,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+
+                var map = new google.maps.Map(document.getElementById('tengah'), options);
+
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'Yamaha Naga Kencana Motor Solo Dan Service',
+                    animation: google.maps.Animation.BOUNCE
+                });
+            }
+            if (a == 7) {
+                var latLng = new google.maps.LatLng(-7.5655308, 110.8308426);
+                var options = {
+                    zoom: 15,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+                var map = new google.maps.Map(document.getElementById('tengah'), options);
+
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'Solindo Motor - Dealer Kawasaki',
+                    animation: google.maps.Animation.BOUNCE
+                });
+            }
+            if (a == 8) {
+                var latLng = new google.maps.LatLng(-7.5505488, 110.8219496);
+                var options = {
+                    zoom: 15,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+                var map = new google.maps.Map(document.getElementById('tengah'), options);
+
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'Dealer Motor Kawasaki',
+                    animation: google.maps.Animation.BOUNCE
+                });
+            }
+            if (a == 9) {
+                var latLng = new google.maps.LatLng(-7.5754932, 110.8201069);
+                var options = {
+                    zoom: 15,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+                var map = new google.maps.Map(document.getElementById('tengah'), options);
+
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'Sumber Baru Rejeki Sraten II',
+                    animation: google.maps.Animation.BOUNCE
+                });
+            }
+            if (a == 10) {
+                var latLng = new google.maps.LatLng(-7.5814801, 110.8204795);
+                var options = {
+                    zoom: 15,
+                    center: latLng,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+                var map = new google.maps.Map(document.getElementById('tengah'), options);
+
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'Dealer Honda Cahaya Sakti Motor Solo',
+                    animation: google.maps.Animation.BOUNCE
+                });
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="halaman">
+        <div id="header">PENENTUAN TITIK DARI SKIN CARE</div>
+        <div id="kiri">
+            <ul id='nav'>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#" onclick="getHTMLText(1)">Lokasi 1</a>
+                </li>
+                <li>
+                    <a href="#" onclick="getHTMLText(2)">Lokasi 2</a>
+                </li>
+                <li>
+                    <a href="#" onclick="getHTMLText(3)">Lokasi 3</a>
+                </li>
+                <li>
+                    <a href="#" onclick="getHTMLText(4)">Lokasi 4</a>
+                </li>
+                <li>
+                    <a href="#" onclick="getHTMLText(5)">Lokasi 5</a>
+                </li>
+                <li>
+                    <a href="#" onclick="getHTMLText(6)">Lokasi 6</a>
+                </li>
+                <li>
+                    <a href="#" onclick="getHTMLText(7)">Lokasi 7</a>
+                </li>
+                <li>
+                    <a href="#" onclick="getHTMLText(8)">Lokasi 8</a>
+                </li>
+                <li>
+                    <a href="#" onclick="getHTMLText(9)">Lokasi 9</a>
+                </li>
+                <li>
+                    <a href="#" onclick="getHTMLText(10)">Lokasi 10</a>
+                </li>
+            </ul>
+        </div>
+        <div id="tengah">TENGAH</div>
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+
+</html>

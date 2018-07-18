@@ -1,0 +1,65 @@
+#halaman {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        #header {
+            height: 100px;
+            padding: 10px;
+            background-color: #f40707;
+        }
+
+        #kiri {
+            height: 500px;
+            padding: 10px;
+            background-color: #CCCCCC;
+            float: left;
+            width: 250px;
+            margin-top: 10px;
+        }
+
+        #nav {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            background-color: #663300;
+            width: 180px;
+            float: left;
+        }
+
+        #nav li {
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 100%;
+        }
+
+        #nav a {
+            display: block;
+            /* untuk memperbesar area klik karena tag a defaultnya inline
+*/
+            color: #FFF;
+            text-decoration: none;
+            padding: 0 15px;
+            line-height: 2;
+            border-bottom: 1px solid #FFF;
+        }
+
+        #nav a:hover {
+            background: #330000;
+        }
+
+        #tengah {
+            height: 500px;
+            padding: 10px;
+            background-color: #CCCCCC;
+            margin: 10px 0px 0 290px;
+        }
+
+        #footer {
+            clear: both;
+            height: 50px;
+            padding: 10px;
+            background-color: #CCCCCC;
+            margin-top: 10px;
+        }
