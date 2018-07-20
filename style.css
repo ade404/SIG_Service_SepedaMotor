@@ -1,5 +1,5 @@
 #halaman {
-            width: 980px;
+            width: 0 auto;
             margin: 0 auto;
         }
 
@@ -14,8 +14,15 @@
             padding: 10px;
             background-color: #CCCCCC;
             float: left;
-            width: 250px;
+            width: 300px;
             margin-top: 10px;
+        }
+
+        #tengah {
+            height: 500px;
+            padding: 10px;
+            background-color: #CCCCCC;
+            margin: 10px 0px 0 330px;
         }
 
         #nav {
@@ -23,7 +30,7 @@
             padding: 0;
             list-style-type: none;
             background-color: #663300;
-            width: 180px;
+            width: 300px;
             float: left;
         }
 
@@ -47,13 +54,6 @@
 
         #nav a:hover {
             background: #330000;
-        }
-
-        #tengah {
-            height: 500px;
-            padding: 10px;
-            background-color: #CCCCCC;
-            margin: 10px 0px 0 290px;
         }
 
         #footer {
