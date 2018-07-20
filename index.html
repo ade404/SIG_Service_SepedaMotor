@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Lokasi Service Sepeda Motor</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB_LlDpB_KIo0XKdGlHKoNnZ4EAgZoR4kI&callback=initMap"></script>
     <script type="text/javascript">
         (function () {
             window.onload = function () {
@@ -109,6 +109,35 @@
                     title: 'Dealer Honda Cahaya Sakti Motor Rajiman',
                     animation: google.maps.Animation.BOUNCE
                 });
+                var contentString = '<div id="content" style="margin-left:15px;	margin-top:3px; overflow:hidden;">' +
+                    '<div id="bodyContent">' +
+                    '<a href="img_src/Dealer_Honda_Cahaya_Sakti_Motor_Rajiman/1.jpg"><img src="img_src/Dealer_Honda_Cahaya_Sakti_Motor_Rajiman/1.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<a href="img_src/Dealer_Honda_Cahaya_Sakti_Motor_Rajiman/2.jpg"><img src="img_src/Dealer_Honda_Cahaya_Sakti_Motor_Rajiman/2.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<br><font style="color:darkblue; font:11px tahoma; margin-left:5px;"> Dealer Honda Cahaya Sakti Motor Rajiman </font><br>' +
+                    '<br><div style="font:13px verdana; color:darkgreen; margin-left:5px;">Jl. Dr. Rajiman No.657, Pajang, Laweyan' +
+                    '<br>Kota Surakarta 57146<br>Jawa Tengah <br>'+
+                    '<br>(0271) 729940<br>' +
+                    '<br>Waktu Buka :' + 
+                                       '<br>Senin &nbsp: 08.00 – 17.00' +
+                                       '<br>Selasa : 08.00 – 17.00' +
+                                       '<br>Rabu &nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Kamis &nbsp: 08.00 – 17.00' +
+                                       '<br>Jumat &nbsp: 08.00 – 17.00' +
+                                       '<br>Sabtu&nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Minggu&nbsp:&nbsp &nbsp &nbsp Tutup   ' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    width: 192,
+                    height: 100
+                });
+
+                infowindow.open(map, marker);
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
             }
             if (a == 2) {
                 var latLng = new google.maps.LatLng(-7.5767787, 110.8090211);
@@ -125,6 +154,36 @@
                     map: map,
                     title: 'Honda 1272 Taruna Motorsport',
                     animation: google.maps.Animation.BOUNCE
+                });
+
+                var contentString = '<div id="content" style="margin-left:15px;	margin-top:3px; overflow:hidden;">' +
+                    '<div id="bodyContent">' +
+                    '<a href="img_src/Taruna_Motorsport_Honda_1272/1.jpg"><img src="img_src/Taruna_Motorsport_Honda_1272/1.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<a href="img_src/Taruna_Motorsport_Honda_1272/2.jpg"><img src="img_src/Taruna_Motorsport_Honda_1272/2.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<br><font style="color:darkblue; font:11px tahoma; margin-left:5px;"> Honda 1272 Taruna Motorsport </font><br>' +
+                    '<br><div style="font:13px verdana; color:darkgreen; margin-left:5px;">Jl. Bhayangkara No.78, Tipes, Serengan,' +
+                    '<br>Kota Surakarta 57154<br>Jawa Tengah <br>'+
+                    '<br>+62 271 727779<br>' +
+                    '<br>Waktu Buka :' + 
+                                       '<br>Senin &nbsp: 08.00 – 17.00' +
+                                       '<br>Selasa : 08.00 – 17.00' +
+                                       '<br>Rabu &nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Kamis &nbsp: 08.00 – 17.00' +
+                                       '<br>Jumat &nbsp: 08.00 – 17.00' +
+                                       '<br>Sabtu&nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Minggu&nbsp:&nbsp &nbsp &nbsp Tutup   ' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    width: 192,
+                    height: 100
+                });
+
+                infowindow.open(map, marker);
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
                 });
 
             }
@@ -144,6 +203,36 @@
                     title: 'Honda AHASS BPK 13419',
                     animation: google.maps.Animation.BOUNCE
                 });
+                
+                var contentString = '<div id="content" style="margin-left:15px;	margin-top:3px; overflow:hidden;">' +
+                    '<div id="bodyContent">' +
+                    '<a href="img_src/Honda_AHASS_BPK_13419/3.jpg"><img src="img_src/Honda_AHASS_BPK_13419/3.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<a href="img_src/Honda_AHASS_BPK_13419/2.jpg"><img src="img_src/Honda_AHASS_BPK_13419/2.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<br><font style="color:darkblue; font:11px tahoma; margin-left:5px;">Honda AHASS BPK 13419</font><br>' +
+                    '<br><div style="font:13px verdana; color:darkgreen; margin-left:5px;">Jl. Letjen Sutoyo No.8, Nusukan, Banjarsari,' +
+                    '<br>Kota Surakarta 57135<br>Jawa Tengah <br>'+
+                    '<br>(0271) 853567<br>' +
+                    '<br>Waktu Buka :' + 
+                                       '<br>Senin &nbsp: 08.00 – 17.00' +
+                                       '<br>Selasa : 08.00 – 17.00' +
+                                       '<br>Rabu &nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Kamis &nbsp: 08.00 – 17.00' +
+                                       '<br>Jumat &nbsp: 08.00 – 17.00' +
+                                       '<br>Sabtu&nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Minggu&nbsp:&nbsp &nbsp &nbsp Tutup   ' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    width: 192,
+                    height: 100
+                });
+
+                infowindow.open(map, marker);
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
             }
             if (a == 4) {
                 var latLng = new google.maps.LatLng(-7.5652051, 110.8189633);
@@ -161,6 +250,36 @@
                     title: 'Yamaha Sprint Motor Solo',
                     animation: google.maps.Animation.BOUNCE
                 });
+
+                var contentString = '<div id="content" style="margin-left:15px;	margin-top:3px; overflow:hidden;">' +
+                    '<div id="bodyContent">' +
+                    '<a href="img_src/Sprint_Yamaha_Motor_Solo/3.jpg"><img src="img_src/Sprint_Yamaha_Motor_Solo/3.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<a href="img_src/Sprint_Yamaha_Motor_Solo/2.jpg"><img src="img_src/Sprint_Yamaha_Motor_Solo/2.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<br><font style="color:darkblue; font:11px tahoma; margin-left:5px;">Yamaha Sprint Motor Solo</font><br>' +
+                    '<br><div style="font:13px verdana; color:darkgreen; margin-left:5px;">Jl. Yosodipuro No.43, Timuran, Banjarsari,' +
+                    '<br>Kota Surakarta 57131<br>Jawa Tengah <br>'+
+                    '<br>(0271) 641479<br>' +
+                    '<br>Waktu Buka :' + 
+                                       '<br>Senin &nbsp: 08.00 – 17.00' +
+                                       '<br>Selasa : 08.00 – 17.00' +
+                                       '<br>Rabu &nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Kamis &nbsp: 08.00 – 17.00' +
+                                       '<br>Jumat &nbsp: 08.00 – 17.00' +
+                                       '<br>Sabtu&nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Minggu&nbsp:&nbsp &nbsp &nbsp Tutup   ' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    width: 192,
+                    height: 100
+                });
+
+                infowindow.open(map, marker);
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });Sprint_Yamaha_Motor_Solo
             }
             if (a == 5) {
                 var latLng = new google.maps.LatLng(-7.5793828, 110.8145731);
@@ -177,6 +296,36 @@
                     map: map,
                     title: 'Yamaha Kondang Motor',
                     animation: google.maps.Animation.BOUNCE
+                });
+                
+                var contentString = '<div id="content" style="margin-left:15px;	margin-top:3px; overflow:hidden;">' +
+                    '<div id="bodyContent">' +
+                    '<a href="img_src/Yamaha_Kondang_Motor/4.jpg"><img src="img_src/Yamaha_Kondang_Motor/4.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<a href="img_src/Yamaha_Kondang_Motor/2.jpg"><img src="img_src/Yamaha_Kondang_Motor/2.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<br><font style="color:darkblue; font:11px tahoma; margin-left:5px;">Yamaha Kondang Motor</font><br>' +
+                    '<br><div style="font:13px verdana; color:darkgreen; margin-left:5px;">Jl. Honggowongso No.164, Tipes, Serengan,' +
+                    '<br>Kota Surakarta 57154<br>Jawa Tengah <br>'+
+                    '<br>(0271) 730246<br>' +
+                    '<br>Waktu Buka :' + 
+                                       '<br>Senin &nbsp: 08.00 – 17.00' +
+                                       '<br>Selasa : 08.00 – 17.00' +
+                                       '<br>Rabu &nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Kamis &nbsp: 08.00 – 17.00' +
+                                       '<br>Jumat &nbsp: 08.00 – 17.00' +
+                                       '<br>Sabtu&nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Minggu&nbsp:&nbsp &nbsp &nbsp Tutup   ' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    width: 192,
+                    height: 100
+                });
+
+                infowindow.open(map, marker);
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
                 });
             }
             if (a == 6) {
@@ -195,6 +344,36 @@
                     title: 'Yamaha Naga Kencana Motor Solo Dan Service',
                     animation: google.maps.Animation.BOUNCE
                 });
+
+                var contentString = '<div id="content" style="margin-left:15px;	margin-top:3px; overflow:hidden;">' +
+                    '<div id="bodyContent">' +
+                    '<a href="img_src/Yamaha_Naga_Kencana_Service/3.jpg"><img src="img_src/Yamaha_Naga_Kencana_Service/3.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<a href="img_src/Yamaha_Naga_Kencana_Service/2.jpg"><img src="img_src/Yamaha_Naga_Kencana_Service/2.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<br><font style="color:darkblue; font:11px tahoma; margin-left:5px;">Yamaha Naga Kencana Motor Solo Dan Service</font><br>' +
+                    '<br><div style="font:13px verdana; color:darkgreen; margin-left:5px;">Jl. Brigjend Slamet Riyadi No.117, Kemlayan, Serengan,' +
+                    '<br>Kota Surakarta 57151<br>Jawa Tengah <br>'+
+                    '<br>(0271) 636138<br>' +
+                    '<br>Waktu Buka :' + 
+                                       '<br>Senin &nbsp: 07.30 – 16.30' +
+                                       '<br>Selasa : 07.30 – 16.30' +
+                                       '<br>Rabu &nbsp&nbsp: 07.30 – 16.30' +
+                                       '<br>Kamis &nbsp: 07.30 – 16.30' +
+                                       '<br>Jumat &nbsp: 07.30 – 16.30' +
+                                       '<br>Sabtu&nbsp&nbsp: 07.30 – 16.30' +
+                                       '<br>Minggu&nbsp:&nbsp &nbsp &nbsp Tutup   ' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    width: 192,
+                    height: 100
+                });
+
+                infowindow.open(map, marker);
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
             }
             if (a == 7) {
                 var latLng = new google.maps.LatLng(-7.5655308, 110.8308426);
@@ -210,6 +389,36 @@
                     map: map,
                     title: 'Solindo Motor - Dealer Kawasaki',
                     animation: google.maps.Animation.BOUNCE
+                });
+
+                var contentString = '<div id="content" style="margin-left:15px;	margin-top:3px; overflow:hidden;">' +
+                    '<div id="bodyContent">' +
+                    '<a href="img_src/Solindo_Motor_-_Dealer_Kawasaki/1.jpg"><img src="img_src/Solindo_Motor_-_Dealer_Kawasaki/1.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<a href="img_src/Solindo_Motor_-_Dealer_Kawasaki/3.jpg"><img src="img_src/Solindo_Motor_-_Dealer_Kawasaki/3.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<br><font style="color:darkblue; font:11px tahoma; margin-left:5px;">Solindo Motor - Dealer Kawasaki</font><br>' +
+                    '<br><div style="font:13px verdana; color:darkgreen; margin-left:5px;">Jl. Sutan Syahrir No.54, Widuran, Kepatihan Wetan, Jebres,' +
+                    '<br>Kota Surakarta 57129<br>Jawa Tengah <br>'+
+                    '<br>+62 271 651837<br>' +
+                    '<br>Waktu Buka :' + 
+                                       '<br>Senin &nbsp: 08.00 – 16.00' +
+                                       '<br>Selasa : 08.00 – 16.00' +
+                                       '<br>Rabu &nbsp&nbsp: 08.00 – 16.00' +
+                                       '<br>Kamis &nbsp: 08.00 – 16.00' +
+                                       '<br>Jumat &nbsp: 08.00 – 16.00' +
+                                       '<br>Sabtu&nbsp&nbsp: 08.00 – 16.00' +
+                                       '<br>Minggu&nbsp:&nbsp &nbsp &nbsp Tutup   ' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    width: 192,
+                    height: 100
+                });
+
+                infowindow.open(map, marker);
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
                 });
             }
             if (a == 8) {
@@ -227,6 +436,36 @@
                     title: 'Dealer Motor Kawasaki',
                     animation: google.maps.Animation.BOUNCE
                 });
+
+                var contentString = '<div id="content" style="margin-left:15px;	margin-top:3px; overflow:hidden;">' +
+                    '<div id="bodyContent">' +
+                    '<a href="img_src/Dealer_Motor_Kawasaki/3.jpg"><img src="img_src/Dealer_Motor_Kawasaki/3.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<a href="img_src/Dealer_Motor_Kawasaki/2.jpg"><img src="img_src/Dealer_Motor_Kawasaki/2.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<br><font style="color:darkblue; font:11px tahoma; margin-left:5px;">Dealer Motor Kawasaki</font><br>' +
+                    '<br><div style="font:13px verdana; color:darkgreen; margin-left:5px;">Jl. Kapten Piere Tendean No.8, Nusukan, Banjarsari,' +
+                    '<br>Kota Surakarta 57135<br>Jawa Tengah <br>'+
+                    '<br>-<br>' +
+                    '<br>Waktu Buka :' + 
+                                       '<br>Senin &nbsp: 10.00 – 16.00' +
+                                       '<br>Selasa : 10.00 – 16.00' +
+                                       '<br>Rabu &nbsp&nbsp: 10.00 – 16.00' +
+                                       '<br>Kamis &nbsp: 10.00 – 16.00' +
+                                       '<br>Jumat &nbsp: 10.00 – 16.00' +
+                                       '<br>Sabtu&nbsp&nbsp: 10.00 – 16.00' +
+                                       '<br>Minggu&nbsp:&nbsp &nbsp &nbsp Tutup   ' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    width: 192,
+                    height: 100
+                });
+
+                infowindow.open(map, marker);
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
             }
             if (a == 9) {
                 var latLng = new google.maps.LatLng(-7.5754932, 110.8201069);
@@ -243,6 +482,36 @@
                     title: 'Sumber Baru Rejeki Sraten II',
                     animation: google.maps.Animation.BOUNCE
                 });
+
+                var contentString = '<div id="content" style="margin-left:15px;	margin-top:3px; overflow:hidden;">' +
+                    '<div id="bodyContent">' +
+                    '<a href="img_src/Sumber_Baru_Rejeki_Sraten_II/4.jpg"><img src="img_src/Sumber_Baru_Rejeki_Sraten_II/4.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<a href="img_src/Sumber_Baru_Rejeki_Sraten_II/3.jpg"><img src="img_src/Sumber_Baru_Rejeki_Sraten_II/3.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<br><font style="color:darkblue; font:11px tahoma; margin-left:5px;">Sumber Baru Rejeki Sraten II</font><br>' +
+                    '<br><div style="font:13px verdana; color:darkgreen; margin-left:5px;">Jl. Gatot Subroto, Jayengan, Serengan,' +
+                    '<br>Kota Surakarta 57152<br>Jawa Tengah <br>'+
+                    '<br>(0271) 653208' +
+                    '<br>Waktu Buka :' + 
+                                       '<br>Senin &nbsp: 08.00 – 17.00' +
+                                       '<br>Selasa : 08.00 – 17.00' +
+                                       '<br>Rabu &nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Kamis &nbsp: 08.00 – 17.00' +
+                                       '<br>Jumat &nbsp: 08.00 – 17.00' +
+                                       '<br>Sabtu&nbsp&nbsp: 08.00 – 17.00' +
+                                       '<br>Minggu&nbsp:&nbsp &nbsp &nbsp Tutup   ' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    width: 192,
+                    height: 100
+                });
+
+                infowindow.open(map, marker);
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
             }
             if (a == 10) {
                 var latLng = new google.maps.LatLng(-7.5814801, 110.8204795);
@@ -258,6 +527,35 @@
                     map: map,
                     title: 'Dealer Honda Cahaya Sakti Motor Solo',
                     animation: google.maps.Animation.BOUNCE
+                });
+
+                var contentString = '<div id="content" style="margin-left:15px;	margin-top:3px; overflow:hidden;">' +
+                    '<div id="bodyContent">' +
+                    '<a href="img_src/Dealer_Honda_Cahaya_Sakti_Motor_Solo/1.jpg"><img src="img_src/Dealer_Honda_Cahaya_Sakti_Motor_Solo/1.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<a href="img_src/Dealer_Honda_Cahaya_Sakti_Motor_Solo/2.jpg"><img src="img_src/Dealer_Honda_Cahaya_Sakti_Motor_Solo/2.jpg" style="width:150px; height:75px;" alt="Service Sepeda Motor"/></a>' +
+                    '<br><font style="color:darkblue; font:11px tahoma; margin-left:5px;">Dealer Honda Cahaya Sakti Motor Solo</font><br>' +
+                    '<br><div style="font:13px verdana; color:darkgreen; margin-left:5px;">Jalan Yos Sudarso No.280, Kratonan, Serengan,' +
+                    '<br>Kota Surakarta 57153<br>Jawa Tengah <br>'+
+                    '<br>+62 271 641887<br>' +
+                   '<br>Waktu Buka :' + 
+                                       '<br>Senin &nbsp: 07.45 – 16.30' +
+                                       '<br>Selasa : 07.45 – 16.30' +
+                                       '<br>Rabu &nbsp&nbsp: 07.45 – 16.30' +
+                                       '<br>Kamis &nbsp: 07.45 – 16.30' +
+                                       '<br>Jumat &nbsp: 07.45 – 16.30' +
+                                       '<br>Sabtu&nbsp&nbsp: 07.45 – 16.30' +
+                                       '<br>Minggu&nbsp:&nbsp &nbsp &nbsp Tutup   ' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    width: 192,
+                    height: 100
+                });
+                infowindow.open(map, marker);
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
                 });
             }
 
@@ -306,7 +604,6 @@
             </ul>
         </div>
         <div id="tengah">TENGAH</div>
-        <div id="footer">FOOTER</div>
     </div>
 </body>
 

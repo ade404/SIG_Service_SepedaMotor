@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js">
+    function initialize() 
+{
+    var cenLatlng = new google.maps.LatLng(000000,111111);
+    var myOptions = {
+                       zoom: 15,
+                       center: cenLatlng,
+                       mapTypeId: google.maps.MapTypeId.ROADMAP
+                    }
+    
+    var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+
+    var myLatlng = new google.maps.LatLng(000000,111111);
+    var marker = new google.maps.Marker({
+                                          position: myLatlng,
+                                          map: map,
+                                          title:"Cherisys Technologies"
+                                       });
+
+    // Start of newly added code block
+    var contentString = '<div id="content" style="margin-left:15px; margin-top:3px;overflow:hidden;">'+
+                           '<div id="bodyContent">'+
+                 	    	'<img src="images/logo.jpg" style="width:172px;height:45px;" 
+			alt="WebStreet.in"/>' +'<br>
+			<font style="color:darkblue;font:11px 
+					tahoma;margin-left:5px;">
+			Your Trusted IT Solutions Provider</font>'+
+		      	'<br><br><div style="font:13px verdana;color:darkgreen;
+			margin-left:5px;">Plot 9A, Street 11<br>Zakir Nagar West' +
+			'<br>New Delhi - 110025<br>India<br><br>+91-9760599879<br>+
+			91-9718441975<br>info@cherisys.com<br><br>'+
+     		      	'<a href="/KB/aspnet/ContactForm.aspx" style="color:#00303f;
+			font:bold 12px verdana;" title="click to contact">
+			Contact Form</a></div>' +
+                           '</div>'+
+                           '</div>';
+        
+    var infowindow = new google.maps.InfoWindow({
+                                                  content: contentString,
+                                                  width:192,
+                                                  height:100
+                                               });
+
+    infowindow.open(map,marker);
+    // End of newly added code block
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
