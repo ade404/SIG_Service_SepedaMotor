@@ -12,7 +12,7 @@
         #kiri {
             height: 500px;
             padding: 10px;
-            background-color: #CCCCCC;
+            background-color: #d3d3cd;
             float: left;
             width: 300px;
             margin-top: 10px;
@@ -29,7 +29,7 @@
             margin: 0;
             padding: 0;
             list-style-type: none;
-            background-color: #663300;
+            background-color: #d3d3cd;
             width: 300px;
             float: left;
         }
@@ -45,7 +45,7 @@
             display: block;
             /* untuk memperbesar area klik karena tag a defaultnya inline
 */
-            color: #FFF;
+            color: rgb(68, 67, 67);
             text-decoration: none;
             padding: 0 15px;
             line-height: 2;
@@ -53,7 +53,7 @@
         }
 
         #nav a:hover {
-            background: #330000;
+            background: #838383;
         }
 
         #footer {
